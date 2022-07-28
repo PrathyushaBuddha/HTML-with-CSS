@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Subscription</title>
+	<style type="text/css">
+		#grid-row {
+   /* (A1) GRID LAYOUT */
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  padding-left: 10px;
+  grid-template-rows: 50px 100px;
+  grid-column-gap: 10px;
+}
+div.cell {
+	text-align: center;
+  background: skyblue;
+  height: 300px;
+  font-size: 20px;
+  border: 1px solid #000;
+  padding: 10px;
+}
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+	</style>
+</head>
+<body>
+	<h1 style="text-align: center;">Subscription</h1><br><br>
+<div id="grid-row">
+  <div class="cell"><p><b>WEEKLY</b></p>
+    <p>Per day : 30 diamonds</p>
+      <p>5 Weapon royales</p>
+      <p>5 Diamond royales</p><br>
+  	<button class="button">2.0$</button>
+  </div> 
+  <div class="cell"><p><b>MONTHLY</b></p>
+      <p>Per day : 25 diamonds</p>
+      <p>5 Incubator Tokens</p>
+      <p>10 Diamond royales</p><br>
+  <button class="button">5.0$</button>
+</div> 
+  <div class="cell"><p><b>YEARLY</b></p>
+    <p>Per day : 20 diamonds</p>
+      <p>10 Incubator Tokens</p>
+      <p>Skyler Character</p><br>
+<button class="button">50$</button>
+  </div>
+</div>
+</body>
+</html>
