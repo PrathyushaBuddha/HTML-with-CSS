@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gareena Free Fire</title>
+	<style type="text/css">
+		body{
+			background-image: url() width: 1000px height: 1000px;
+		}
+		header {
+background-color: orange;
+position: fixed;
+left: 0;
+right: 0;
+top: 100px;
+height: 30px;
+display: flex;
+border-radius:40px;
+align-items: center;
+box-shadow: 0 0 25px 0 black;
+}
+header * {
+display: inline;
+}
+header li {
+margin: 20px;
+}
+header li a {
+color: blue;
+text-decoration: none;
+}
+.w3-bar {
+	font-size: 40px;
+}
+p{
+	font-size: 20px;
+	</style>
+}
+</head>
+<body background="C:\Users\Prathyusha\Documents\html\assess2\ff.jpg">
+	<h1 style="color: brown;text-align: center;">GARENA FREE FIRE</h1>
+    <header>
+<nav>
+<ul>
+<li>
+<a href="home1.html"> Home </a>
+</li>
+<li>
+<a href="modes.html"> Modes </a>
+</li>
+<li>
+<a href="character.html"> Characters </a>
+</li>
+<li> <a href="subscription.html"> Subscription </a>
+</li>
+<li>
+<a href="survey.html"> Survey Form </a>
+</li>
+</ul>
+</nav>
+</header>
+<br><br><br><br>
+<p style="color:floralwhite;"><b>Garena Free Fire, also known as Free Fire, is a battle royale game, developed by Vietnamese game company 111dots Studio and published by Garena for Android and iOS.It became the most downloaded mobile game globally in 2019 In August 2021, Free Fire set a record with over 150 million daily active users globally. As of 2021, Free Fire has grossed more than $4 billion worldwide.<br><br>
+
+Free Fire Max, a graphically enhanced version of Free Fire was released globally on 28 September 2021.</b></p>
+<br>
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="FF('Task')">Tasks</button>
+  <button class="w3-bar-item w3-button" onclick="FF('Guild')">Guild</button>
+  <button class="w3-bar-item w3-button" onclick="FF('Login')">Login </button>
+</div>
+
+<div id="Task" class="w3-container ff" style="color:floralwhite">
+  <h2>Daily Task</h2>
+  <p>Time Spend on game like 5min,10min and 60 min you will get reward daily.</p>
+</div>
+
+<div id="Guild" class="w3-container ff" style="display:none;color:floralwhite;">
+  <h2>Guild Reward</h2>
+  <p>Weekly you received some tokens and room cards if you are in a guild.</p> 
+</div>
+
+<div id="Login" class="w3-container ff" style="display:none;color: floralwhite;">
+  <h2>Daily Login</h2>
+  <p>For every 24 hours you will get coins and one free spin for gold royale.</p>
+</div>
+
+<script>
+function FF(GFF) {
+  var i;
+  var x = document.getElementsByClassName("ff");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(GFF).style.display = "block";  
+}
+</script>
+</body>
+</html>
